@@ -6,65 +6,25 @@ export const faqs = [
   {
     name: "lesfaqskolles",
     image: kollefaq,
-    html: `  <div class="accordion">
+    html: (faqs: any) => `  <div class="accordion">
     
 
-
+          ${faqs
+            .map(
+              (faq: any, i: any) => `
     <div class="accordion-item">
-      <button id="accordion-button-3" aria-expanded="true"><span class="accordion-title">1. Est-ce que Kollé SERRÉ compresse le ventre ou est inconfortable ?</span><span class="icon" aria-hidden="true"></span></button>
+      <button id="accordion-button-3" aria-expanded="${
+        i === 0 ? "true" : "false"
+      }"><span class="accordion-title">${
+                faq.question
+              }</span><span class="icon" aria-hidden="true"></span></button>
       <div class="accordion-content">
-        <p>Non, notre produit est conçu pour être confortable et ne compresse pas le ventre. Il vous offre un maintien léger et efficace, sans vous donner l'impression d'être à l'étroit. Vous pouvez le porter toute la journée sans ressentir d'inconfort.</p>
+        <p>${faq.answer}</p>
       </div>
     </div>
-    
-
-    <div class="accordion-item">
-      <button id="accordion-button-3" aria-expanded="false"><span class="accordion-title">2. Est-ce que Kollé SERRÉ convient à toutes les morphologies ?</span><span class="icon" aria-hidden="true"></span></button>
-      <div class="accordion-content">
-        <p>Oui, Kollé SERRÉ est conçue pour s'adapter à différentes morphologies et tailles. Grâce à ses matériaux extensibles et à sa conception sans couture, il épouse les formes de votre corps sans créer de démarcation visible sous les vêtements.</p>
-      </div>
-    </div>
-    
-
-
-    
-
-
-    <div class="accordion-item">
-      <button id="accordion-button-3" aria-expanded="false"><span class="accordion-title">3. Puis-je porter ces culottes et shorty sculptantes sous des vêtements moulants ou des tissus délicats ?</span><span class="icon" aria-hidden="true"></span></button>
-      <div class="accordion-content">
-        <p>Absolument ! Kollé SERRÉ est invisible sous les vêtements, y compris sous des robes moulantes ou des tissus délicats comme la soie ou le satin. Vous pouvez le porter en toute confiance lors de mariages, de fêtes, ou au travail.</p>
-      </div>
-    </div>
-    
-
-
-
-
-    <div class="accordion-item">
-      <button id="accordion-button-3" aria-expanded="false"><span class="accordion-title">4. Comment puis-je passer commande et bénéficier de votre offre exclusive ?</span><span class="icon" aria-hidden="true"></span></button>
-      <div class="accordion-content">
-        <p>Pour passer commande, cliquez sur le bouton "Je veux la silhouette parfaite"  sur cette page. Vous bénéficierez de notre offre exclusive de -50%. Nous expédions rapidement pour que vous puissiez commencer à vous sentir belle et confiante le plus tôt possible.</p>
-      </div>
-    </div>
-    
-    
-    
-      <div class="accordion-item">
-      <button id="accordion-button-3" aria-expanded="false"><span class="accordion-title">5. Quelle est votre politique de remboursement ?</span><span class="icon" aria-hidden="true"></span></button>
-      <div class="accordion-content">
-        <p>Oui, nous acceptons les retours. Les clients doivent faire une demande de retour sur leur commande, que nous validons ensuite. Ils reçoivent un document avec l'adresse de retour et doivent envoyer le produit à nos bureaux à leurs frais. Les retours doivent être effectués dans un délai de 14 jours et le remboursement est immédiat dès réception du retour.</p>
-      </div>
-    </div>
-    
-    
-      <div class="accordion-item">
-      <button id="accordion-button-3" aria-expanded="false"><span class="accordion-title">5. Quels sont vos délais de livraison ?</span><span class="icon" aria-hidden="true"></span></button>
-      <div class="accordion-content">
-        <p>La livraison des commandes ( en France et en Belgique )  se fait dans un délai de 5 jours ouvrables, pour toute autre demande spéciale veuillez contacter le support client.</p>
-      </div>
-    </div>
-    
+    `
+            )
+            .join("\n")}
 
 <!--END-->
   </div>
@@ -235,55 +195,29 @@ export const faqs = [
   {
     name: "lesfaqsklozer",
     image: klozer,
-    html: `  <div class="accordion">
+    html: (faqs: any) => `  <div class="accordion">
+    
+
+          ${faqs
+            .map(
+              (faq: any, i: any) => `
     <div class="accordion-item">
-      <button id="accordion-button-3" aria-expanded="true"><span class="accordion-title">Quels sont les objectifs de cet événement ?</span><span class="icon" aria-hidden="true"></span></button>
+      <button id="accordion-button-3" aria-expanded="${
+        i === 0 ? "true" : "false"
+      }"><span class="accordion-title">${
+                faq.question
+              }</span><span class="icon" aria-hidden="true"></span></button>
       <div class="accordion-content">
-        <p>Pour accéder à la Masterclass 100% gratuit "3 secrets du Dr. Sebi : La perte de poids avec le régime alcalin", il vous suffit de remplir le formulaire ci-dessous avec votre nom, prénom et adresse e-mail et cliquer sur le bouton "Voir La Masterclass Maintenant".</p>
+        <p>${faq.answer}</p>
       </div>
     </div>
-    <div class="accordion-item">
-      <button id="accordion-button-4" aria-expanded="false"><span class="accordion-title">Que dois-je prévoir pour la journée ?</span><span class="icon" aria-hidden="true"></span></button>
-      <div class="accordion-content">
-        <p>Non, la Masterclass est entièrement gratuite. Nous croyons en l'accès universel à l'information pour promouvoir la santé et le bien-être de chacun.</p>
-      </div>
-    </div>
-    <div class="accordion-item">
-      <button id="accordion-button-5" aria-expanded="false"><span class="accordion-title">Comment se passe l'arrivée sur le lieu ?</span><span class="icon" aria-hidden="true"></span></button>
-      <div class="accordion-content">
-        <p>L'arrivée se fera devant le Parc Des Princes, des consignes seront envoyées à chaque membre une fois leurs inscriptions validées.</p>
-      </div>
-    </div>
-    <div class="accordion-item">
-      <button id="accordion-button-5" aria-expanded="false"><span class="accordion-title">Est-ce que je pourrais échanger avec les intervenants ? </span><span class="icon" aria-hidden="true"></span></button>
-      <div class="accordion-content">
-        <p>Le régime alcalin offre de nombreux avantages, notamment la stimulation du métabolisme, la réduction des fringales, et la promotion d'une perte de poids saine et durable. De plus, il contribue à améliorer la digestion, à réduire l'inflammation et à renforcer le système immunitaire.</p>
-      </div>
-    </div>
-    <div class="accordion-item">
-      <button id="accordion-button-5" aria-expanded="false"><span class="accordion-title">Pourquoi déposer une candidature si je veux participer ? </span><span class="icon" aria-hidden="true"></span></button>
-      <div class="accordion-content">
-        <p>Le régime alcalin offre de nombreux avantages, notamment la stimulation du métabolisme, la réduction des fringales, et la promotion d'une perte de poids saine et durable. De plus, il contribue à améliorer la digestion, à réduire l'inflammation et à renforcer le système immunitaire.</p>
-      </div>
-    </div>
-    <div class="accordion-item">
-      <button id="accordion-button-5" aria-expanded="false"><span class="accordion-title">Quelle est la spécialité de Klozer?</span><span class="icon" aria-hidden="true"></span></button>
-      <div class="accordion-content">
-        <p>Klozer redéfinit l'organisation d'événements corporate, séminaire, team building, afterwork grâce à une marketplace de mise en relation tout en un, utilisant l'intelligence artificielle pour personnaliser chaque aspect de votre événement et ses objectifs
-<br>
-De la sélection du lieu aux services complémentaires, tout est accessible rapidement et simplement
-Klozer propose à ses clients des expériences uniques autour de lieux atypiques et activités distinctives, cultivant la cohésion d'équipe
-et l'engagement</p>
-      </div>
-    </div>
-    <div class="accordion-item">
-      <button id="accordion-button-5" aria-expanded="false"><span class="accordion-title">Quelle est l'activité d'Entrepreneurs.com?</span><span class="icon" aria-hidden="true"></span></button>
-      <div class="accordion-content">
-        <p>Depuis plus de 5 ans, Entrepreneurs.com est le mouvement entrepreneurial numéro 1 en francophonie qui a pour mission de permettre aux entrepreneurs ambitieux de briser leur plafond de verre et de faire décoller leur entreprise grâce au Système qui leur permettra d'atteindre des objectifs qu'ils n'ont jamais atteints.</p>
-      </div>
-    </div>
+    `
+            )
+            .join("\n")}
+
 <!--END-->
-  </div>`,
+  </div>
+  `,
 
     css: `/* FAQ */
 
@@ -474,8 +408,7 @@ span.accord {
   {
     name: "mybusiness-passion",
     image: mybusinesspassion,
-    html: `
-<div class="DS_FAQ_DS">
+    html: (faqs: any) => `  <div class="DS_FAQ_DS">
 <div style="visibility: hidden; position: absolute; width: 0px; height: 0px;">
   <svg xmlns="http://www.w3.org/2000/svg">
     <symbol viewBox="0 0 24 24" id="expand-more">
@@ -486,40 +419,23 @@ span.accord {
     </symbol>
   </svg>
 </div>
-<details>
+
+          ${faqs
+            .map(
+              (faq: any) => `<details>
   <summary>
-    À quel moment dois-je rejoindre l'Académie ?
+    ${faq.question}
     <svg class="control-icon control-icon-expand" width="24" height="24" role="presentation"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#expand-more" ></use></svg>
     <svg class="control-icon control-icon-close" width="24" height="24" role="presentation"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#close" ></use></svg>
   </summary>
-  <p>Il est recommandé de rejoindre l'académie dès que possible. Se former avant de démarrer un projet permet d'éviter des erreurs potentielles qui pourraient freiner son développement. Rejoindre l'académie avant de lancer votre projet vous assure de commencer dans les meilleures conditions. Ne prenez pas de risques inutiles : nous avons un plan d'action étape par étape pour vous accompagner dans le développement de votre projet et de votre nouvelle vie." </p>
-</details>
-<details>
-  <summary>
-    Y a-t-il un suivi à la fin des 12 semaines ?
-    <svg class="control-icon control-icon-expand" width="24" height="24" role="presentation"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#expand-more" ></use></svg>
-    <svg class="control-icon control-icon-close" width="24" height="24" role="presentation"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#close" ></use></svg>
-  </summary>
-  <p>Oui, il y a un suivi après les 12 semaines. Une fois votre programme terminé, vous aurez accès à un groupe privé premium réservé aux membres de l'académie. Dans ce groupe, vous pourrez partager vos résultats, poser des questions, apporter de l'aide à d'autres membres, et interagir avec la communauté. Ce groupe premium vous offre également deux sessions de questions-réponses groupées par mois avec moi, ainsi que d'autres avantages exclusifs pour vous soutenir dans le développement et la vente de vos produits numériques. Nous sommes là pour vous aider à réussir à chaque étape de votre parcours.</p>
-</details>
-<details>
-  <summary>
-    Est-ce accessible aux hommes ?
-    <svg class="control-icon control-icon-expand" width="24" height="24" role="presentation"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#expand-more" ></use></svg>
-    <svg class="control-icon control-icon-close" width="24" height="24" role="presentation"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#close" ></use></svg>
-  </summary>
-  <p>Absolument, notre programme est ouvert à tous, sans distinction de genre, d'âge ou de parcours. Nous accueillons avec plaisir toute personne désireuse d'apprendre et de se développer dans le domaine de la vente de formations en ligne et du développement personnel. Notre approche inclusive garantit que chacun, homme ou femme, puisse bénéficier des outils et des ressources nécessaires pour réussir dans cet environnement dynamique et stimulant.</p>
-</details>
-<details>
-  <summary>
-    Est-ce que le CPF est disponible ?
-    <svg class="control-icon control-icon-expand" width="24" height="24" role="presentation"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#expand-more" ></use></svg>
-    <svg class="control-icon control-icon-close" width="24" height="24" role="presentation"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#close" ></use></svg>
-  </summary>
-  <p>Malheureusement, notre académie n'est pas éligible au CPF. Nous croyons fermement que l'investissement financier personnel encourage souvent une plus grande implication et un engagement plus sérieux dans les programmes de formation. Nous nous efforçons d'offrir une expérience de formation de haute qualité à nos membres et recherchons des personnes déterminées à apporter des changements significatifs dans leur vie, prêtes à investir en elles-mêmes pour y parvenir."</p>
-</details>
-</div>
-`,
+  <p>${faq.answer}</p>
+</details>`
+            )
+            .join("\n")}
+
+<!--END-->
+  </div>
+  `,
     css: `
     .DS_FAQ_DS details {
       width: 98%;

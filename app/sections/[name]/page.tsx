@@ -1,6 +1,9 @@
 "use client";
 
-import Section, { SectionWithComponent } from "./components/Section";
+import Section, {
+  SectionWithComponent,
+  SectionFaq,
+} from "./components/Section";
 import { faqs } from "@/utils/faqs";
 import { testimonials } from "@/utils/testimonials";
 import { timelines } from "@/utils/Timelines";
@@ -28,7 +31,7 @@ const SectionPage = ({ params }: any) => {
         {params.name === "faq" ? (
           <div className="grid grid-cols-3 w-full gap-3">
             {faqs?.map((item) => (
-              <Section
+              <SectionFaq
                 key={item.name}
                 name={item.name}
                 html={item.html}
