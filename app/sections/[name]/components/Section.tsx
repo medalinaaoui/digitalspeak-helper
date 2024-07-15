@@ -23,10 +23,10 @@ const Section = ({ image, name, html, js, css }: any) => {
   const copyHTMLToClipboard = async () => {
     try {
       await navigator.clipboard.writeText(html);
-      toast.success("Done", {
+      toast.success("CSS copied to clipboard!", {
         style: {
           borderRadius: "10px",
-          background: "#F36609",
+          background: "#242424",
           color: "#fff",
         },
       });
@@ -37,10 +37,10 @@ const Section = ({ image, name, html, js, css }: any) => {
   const copyCSSToClipboard = async () => {
     try {
       await navigator.clipboard.writeText(css);
-      toast.success("Done", {
+      toast.success("CSS copied to clipboard!", {
         style: {
           borderRadius: "10px",
-          background: "#F36609",
+          background: "#242424",
           color: "#fff",
         },
       });
@@ -51,10 +51,10 @@ const Section = ({ image, name, html, js, css }: any) => {
   const copyJSToClipboard = async () => {
     try {
       await navigator.clipboard.writeText(js);
-      toast.success("Done", {
+      toast.success("CSS copied to clipboard!", {
         style: {
           borderRadius: "10px",
-          background: "#F36609",
+          background: "#242424",
           color: "#fff",
         },
       });
@@ -171,10 +171,10 @@ export const SectionWithComponent = ({
   const copyHTMLToClipboard = async () => {
     try {
       await navigator.clipboard.writeText(html);
-      toast.success("Done", {
+      toast.success("CSS copied to clipboard!", {
         style: {
           borderRadius: "10px",
-          background: "#F36609",
+          background: "#242424",
           color: "#fff",
         },
       });
@@ -185,10 +185,10 @@ export const SectionWithComponent = ({
   const copyCSSToClipboard = async () => {
     try {
       await navigator.clipboard.writeText(css);
-      toast.success("Done", {
+      toast.success("CSS copied to clipboard!", {
         style: {
           borderRadius: "10px",
-          background: "#F36609",
+          background: "#242424",
           color: "#fff",
         },
       });
@@ -200,10 +200,10 @@ export const SectionWithComponent = ({
     try {
       if (js) {
         await navigator.clipboard.writeText(js);
-        toast.success("Done", {
+        toast.success("CSS copied to clipboard!", {
           style: {
             borderRadius: "10px",
-            background: "#F36609",
+            background: "#242424",
             color: "#fff",
           },
         });
@@ -301,10 +301,10 @@ export const SectionFaq = ({ image, name, html, js, css }: any) => {
   const copyCSSToClipboard = async () => {
     try {
       await navigator.clipboard.writeText(css);
-      toast.success("Done", {
+      toast.success("CSS copied to clipboard!", {
         style: {
           borderRadius: "10px",
-          background: "#F36609",
+          background: "#242424",
           color: "#fff",
         },
       });
@@ -315,10 +315,10 @@ export const SectionFaq = ({ image, name, html, js, css }: any) => {
   const copyJSToClipboard = async () => {
     try {
       await navigator.clipboard.writeText(js);
-      toast.success("Done", {
+      toast.success("CSS copied to clipboard!", {
         style: {
           borderRadius: "10px",
-          background: "#F36609",
+          background: "#242424",
           color: "#fff",
         },
       });
@@ -356,10 +356,10 @@ export const SectionFaq = ({ image, name, html, js, css }: any) => {
   const copyHTMLToClipboard = async () => {
     try {
       await navigator.clipboard.writeText(theHtml);
-      toast.success("Done", {
+      toast.success("CSS copied to clipboard!", {
         style: {
           borderRadius: "10px",
-          background: "#F36609",
+          background: "#242424",
           color: "#fff",
         },
       });

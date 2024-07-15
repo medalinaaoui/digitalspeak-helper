@@ -9,10 +9,10 @@ const Code = () => {
       await navigator.clipboard.writeText(
         `@import "https://cdn.digital-speak.com/Customization/Animation/keyframes.css"`
       );
-      toast.success("Done", {
+      toast.success("CSS copied to clipboard!", {
         style: {
           borderRadius: "10px",
-          background: "#F36609",
+          background: "#242424",
           color: "#fff",
         },
       });

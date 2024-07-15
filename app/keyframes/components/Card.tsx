@@ -8,10 +8,10 @@ const Card = ({ keyframe, name, type }: any) => {
   const copyToClipboard = async () => {
     try {
       await navigator.clipboard.writeText(`animation: ${keyframe};`);
-      toast.success("Done", {
+      toast.success("CSS copied to clipboard!", {
         style: {
           borderRadius: "10px",
-          background: "#F36609",
+          background: "#242424",
           color: "#fff",
         },
       });

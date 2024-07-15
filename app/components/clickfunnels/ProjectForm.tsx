@@ -51,10 +51,10 @@ const ProjectForm = () => {
   const copyToClipboard = async () => {
     try {
       await navigator.clipboard.writeText(generatedCSS);
-      toast.success("Done", {
+      toast.success("CSS copied to clipboard!", {
         style: {
           borderRadius: "10px",
-          background: "#F36609",
+          background: "#242424",
           color: "#fff",
         },
       });
