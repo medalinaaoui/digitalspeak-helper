@@ -47,24 +47,24 @@ const TOP_RIGHT_CLIP = "polygon(0 0, 0 100%, 100% 100%, 0% 100%)";
 const BOTTOM_LEFT_CLIP = "polygon(100% 100%, 100% 0, 100% 100%, 0 100%)";
 const TOP_LEFT_CLIP = "polygon(0 0, 100% 0, 100% 100%, 100% 0)";
 
-const ENTRANCE_KEYFRAMES = {
+const ENTRANCE_KEYFRAMES: any = {
   left: [BOTTOM_RIGHT_CLIP, NO_CLIP],
   bottom: [BOTTOM_RIGHT_CLIP, NO_CLIP],
   top: [BOTTOM_RIGHT_CLIP, NO_CLIP],
   right: [TOP_LEFT_CLIP, NO_CLIP],
 };
 
-const EXIT_KEYFRAMES = {
+const EXIT_KEYFRAMES: any = {
   left: [NO_CLIP, TOP_RIGHT_CLIP],
   bottom: [NO_CLIP, TOP_RIGHT_CLIP],
   top: [NO_CLIP, TOP_RIGHT_CLIP],
   right: [NO_CLIP, BOTTOM_LEFT_CLIP],
 };
 
-const LinkBox = ({ Icon, href }) => {
+const LinkBox = ({ Icon, href }: any) => {
   const [scope, animate] = useAnimate();
 
-  const getNearestSide = (e) => {
+  const getNearestSide = (e: any) => {
     const box = e.target.getBoundingClientRect();
 
     const proximityToLeft = {
@@ -94,15 +94,15 @@ const LinkBox = ({ Icon, href }) => {
     return sortedProximity[0].side;
   };
 
-  const handleMouseEnter = (e) => {
-    const side = getNearestSide(e);
+  const handleMouseEnter = (e: any) => {
+    const side: any = getNearestSide(e);
 
     animate(scope.current, {
       clipPath: ENTRANCE_KEYFRAMES[side],
     });
   };
 
-  const handleMouseLeave = (e) => {
+  const handleMouseLeave = (e: any) => {
     const side = getNearestSide(e);
 
     animate(scope.current, {
