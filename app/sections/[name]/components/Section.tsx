@@ -89,7 +89,7 @@ const Section = ({ image, name, html, js, css }: any) => {
                   </span>
                 </button>
               </div>
-              <div className="mockup-code min-h-full max-h-[22rem] overflow-y-auto">
+              <div className="mockup-code min-h-full max-h-[60vh] overflow-y-auto">
                 <pre data-prefix="$">
                   <code>{html}</code>
                 </pre>
@@ -104,7 +104,7 @@ const Section = ({ image, name, html, js, css }: any) => {
                   </span>
                 </button>
               </div>
-              <div className="mockup-code min-h-full max-h-[22rem] overflow-y-auto">
+              <div className="mockup-code min-h-full max-h-[60vh] overflow-y-auto">
                 <pre data-prefix="$">
                   <code>{css}</code>
                 </pre>
@@ -119,7 +119,7 @@ const Section = ({ image, name, html, js, css }: any) => {
                   </span>
                 </button>
               </div>
-              <div className="mockup-code min-h-full max-h-[22rem] overflow-y-auto">
+              <div className="mockup-code min-h-full max-h-[60vh] overflow-y-auto">
                 <pre data-prefix="$">
                   <code>{js}</code>
                 </pre>
@@ -232,7 +232,7 @@ export const SectionWithComponent = ({
                   </span>
                 </button>
               </div>
-              <div className="mockup-code min-h-full max-h-[22rem] overflow-y-auto">
+              <div className="mockup-code min-h-full max-h-[60vh] overflow-y-auto">
                 <pre data-prefix="$">
                   <code>{html}</code>
                 </pre>
@@ -247,7 +247,7 @@ export const SectionWithComponent = ({
                   </span>
                 </button>
               </div>
-              <div className="mockup-code min-h-full max-h-[22rem] overflow-y-auto">
+              <div className="mockup-code min-h-full max-h-[60vh] overflow-y-auto">
                 <pre data-prefix="$">
                   <code>{css}</code>
                 </pre>
@@ -262,7 +262,7 @@ export const SectionWithComponent = ({
                   </span>
                 </button>
               </div>
-              <div className="mockup-code min-h-full max-h-[22rem] overflow-y-auto">
+              <div className="mockup-code min-h-full max-h-[60vh] overflow-y-auto">
                 <pre data-prefix="$">
                   <code>{js}</code>
                 </pre>
