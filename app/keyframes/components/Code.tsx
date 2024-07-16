@@ -7,7 +7,7 @@ const Code = () => {
   const copyToClipboard = async () => {
     try {
       await navigator.clipboard.writeText(
-        `@import "https://cdn.digital-speak.com/Customization/Animation/keyframes.css"`
+        `@import "https://cdn.digital-speak.com/Customization/Animation/keyframes.css";`
       );
       toast.success("CSS copied to clipboard!", {
         style: {
