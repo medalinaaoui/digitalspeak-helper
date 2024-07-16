@@ -40,7 +40,7 @@ const Code = () => {
       <div className="mockup-code min-h-full max-h-96 overflow-y-auto">
         <pre data-prefix="$">
           <code>
-            {`@import "https://cdn.digital-speak.com/Customization/Animation/keyframes.css"`}
+            {`@import "https://cdn.digital-speak.com/Customization/Animation/keyframes.css";`}
           </code>
         </pre>
       </div>
